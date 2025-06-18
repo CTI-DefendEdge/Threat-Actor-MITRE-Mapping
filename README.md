@@ -10,7 +10,7 @@ To view a layer:
 
 1. Copy the **raw GitHub URL** of any `.json` file in this repository
 2. Visit the MITRE ATT&CK Navigator:  
-   👉 [https://mitre-attack.github.io/attack-navigator/]
+   - [https://mitre-attack.github.io/attack-navigator/]
 3. Click `Open Existing Layer` → `From URL`
 4. Paste the copied raw URL and click **>**
 
