@@ -4,7 +4,7 @@ JSON files for MITRE ATT&amp;CK Navigator layers used in threat analysis and CTI
 
 This repository is a curated collection of MITRE ATT&CK Navigator layers created by DefendEdge's CTI team. Each layer reflects our understanding of specific threat actors, based on intelligence we’ve collected. These layers visualize the Tactics, Techniques, and Procedures (TTPs) used by each actor, mapped against the MITRE ATT&CK framework.
 
-## 🔍 How to Use
+## How to Use
 
 To view a layer:
 
