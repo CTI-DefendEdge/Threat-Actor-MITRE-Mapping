@@ -1,0 +1,319 @@
+{
+	"name": "RansomHub",
+	"versions": {
+		"attack": "17",
+		"navigator": "5.1.0",
+		"layer": "4.5"
+	},
+	"domain": "enterprise-attack",
+	"description": "",
+	"filters": {
+		"platforms": [
+			"Windows",
+			"Linux",
+			"macOS",
+			"Network Devices",
+			"ESXi",
+			"PRE",
+			"Containers",
+			"IaaS",
+			"SaaS",
+			"Office Suite",
+			"Identity Provider"
+		]
+	},
+	"sorting": 0,
+	"layout": {
+		"layout": "side",
+		"aggregateFunction": "average",
+		"showID": false,
+		"showName": true,
+		"showAggregateScores": false,
+		"countUnscored": false,
+		"expandedSubtechniques": "none"
+	},
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T1047",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may abuse Windows Management Instrumentation to execute malicious commands and payloads.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates used Mimikatz on Windows systems to gather credentials.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may disable endpoint detection and response (EDR) tooling to avoid detection.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1190",
+			"tactic": "initial-access",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may exploit known vulnerabilities to obtain initial access.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1219",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may use Anydesk, a legitimate desktop support and remote access software to establish an interactive command and control channel to target systems within networks.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may hide binaries by renaming executable names.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may log onto systems using the Remote Desk Protocol, then perform actions as the logged-on user.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates used PowerShell and Scripts to quickly run and automate intrusion.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may remove logs to inhibit cybersecurity response.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may manipulate accounts to maintain and/or elevate access to victim systems.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may manipulate accounts to maintain and/or elevate access to victim systems.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1048",
+			"tactic": "exfiltration",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1048.002",
+			"tactic": "exfiltration",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may steal data by exfiltrating it over an asymmetrically encrypted network protocol other than that of the existing command and control channel.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1048.003",
+			"tactic": "exfiltration",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1566",
+			"tactic": "initial-access",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates used mass phishing and spear-phishing emails to obtain initial access.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates used Mimikatz on Windows systems to gather credentials.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1110.003",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may use password spraying to obtain initial access.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1486",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates used encryption for ransomware operations.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1588",
+			"tactic": "resource-development",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may buy, steal, or download exploits that can be used during targeting.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1537",
+			"tactic": "exfiltration",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may exfiltrate data by transferring the data, including through sharing/syncing and creating backups of cloud environments, to another cloud account they control on the same service.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may create an account to maintain access to victim systems.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1018",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system. ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1046",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub affiliates may attempt to get a listing of services running on remote hosts and local network infrastructure devices,",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1490",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "RansomHub ransomware deleted volume shadow copies and affiliates removed backups for ransomware operations.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#ff6666ff",
+			"#ffe766ff",
+			"#8ec843ff"
+		],
+		"minValue": 0,
+		"maxValue": 100
+	},
+	"legendItems": [],
+	"metadata": [],
+	"links": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false,
+	"selectVisibleTechniques": false
+}
