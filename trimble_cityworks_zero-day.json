@@ -1,0 +1,420 @@
+{
+	"name": "Trimble Cityworks Zero-Day",
+	"versions": {
+		"attack": "17",
+		"navigator": "5.1.1",
+		"layer": "4.5"
+	},
+	"domain": "enterprise-attack",
+	"description": "",
+	"filters": {
+		"platforms": [
+			"Windows",
+			"Linux",
+			"macOS",
+			"Network Devices",
+			"ESXi",
+			"PRE",
+			"Containers",
+			"IaaS",
+			"SaaS",
+			"Office Suite",
+			"Identity Provider"
+		]
+	},
+	"sorting": 0,
+	"layout": {
+		"layout": "side",
+		"aggregateFunction": "average",
+		"showID": false,
+		"showName": true,
+		"showAggregateScores": false,
+		"countUnscored": false,
+		"expandedSubtechniques": "none"
+	},
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T1592",
+			"tactic": "reconnaissance",
+			"color": "#e60d0d",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1592.002",
+			"tactic": "reconnaissance",
+			"color": "#c6dbef",
+			"comment": "TA most likely scanned exposed CW vulnerable instances. 111 systems were found to be exposed, via Shodan. 21% of those were vulnerable.  ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003",
+			"tactic": "credential-access",
+			"color": "#e60d0d",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.001",
+			"tactic": "credential-access",
+			"color": "#fca2a2",
+			"comment": "ASSESSED:\nCobalt Strike is commonly used to dump credentials from LSASS memory.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "persistence",
+			"color": "#e60d0d",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "privilege-escalation",
+			"color": "#e60d0d",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.003",
+			"tactic": "persistence",
+			"color": "#c6dbef",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.003",
+			"tactic": "privilege-escalation",
+			"color": "#c6dbef",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071",
+			"tactic": "command-and-control",
+			"color": "#e60d0d",
+			"comment": "ASSESSED",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.001",
+			"tactic": "command-and-control",
+			"color": "#c6dbef",
+			"comment": "Used HTTPS for communication to masquerade as legitimate traffic.\n",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1005",
+			"tactic": "collection",
+			"color": "#e60d0d",
+			"comment": "Directory enumeration to ID and flag files for exfiltration. ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1190",
+			"tactic": "initial-access",
+			"color": "#e60d0d",
+			"comment": "TA exploited CVE-2025-0994. This allowed them RCE on web servers.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555",
+			"tactic": "credential-access",
+			"color": "#e60d0d",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555.003",
+			"tactic": "credential-access",
+			"color": "#fca2a2",
+			"comment": "ASSESSED:\nCredentials stored in browsers may have been targeted in this attack, as IIS servers typically store account credentials.",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1219",
+			"tactic": "command-and-control",
+			"color": "#e60d0d",
+			"comment": "ASSESSED",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036",
+			"tactic": "defense-evasion",
+			"color": "#e60d0d",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.005",
+			"tactic": "defense-evasion",
+			"color": "#c6dbef",
+			"comment": "Mimicked legitimate services such as winpty.dll",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "defense-evasion",
+			"color": "#e60d0d",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "privilege-escalation",
+			"color": "#e60d0d",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550",
+			"tactic": "defense-evasion",
+			"color": "#fdae6b",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550",
+			"tactic": "lateral-movement",
+			"color": "#fdae6b",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1550.002",
+			"tactic": "defense-evasion",
+			"color": "#fdae6b",
+			"comment": "ASSESSED: \nTA may have been able to dump NTLM hashes for authenticating other systems, commonly seen in Cobalt Strike. ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.002",
+			"tactic": "lateral-movement",
+			"color": "#fdae6b",
+			"comment": "ASSESSED: \nTA may have been able to dump NTLM hashes for authenticating other systems, commonly seen in Cobalt Strike. ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1595",
+			"tactic": "reconnaissance",
+			"color": "#e60d0d",
+			"comment": "TA targeted Trimble Cityworks, a management platform used by U.S. local governments/utilities. ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1595.002",
+			"tactic": "reconnaissance",
+			"color": "#c6dbef",
+			"comment": "TA targeted Trimble Cityworks, a management platform used by U.S. local governments/utilities. ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059",
+			"tactic": "execution",
+			"color": "#e60d0d",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.001",
+			"tactic": "execution",
+			"color": "#c6dbef",
+			"comment": "Deployed backdoors via PowerShell",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.003",
+			"tactic": "execution",
+			"color": "#c6dbef",
+			"comment": "TA used cmd.exe, ipconfig, tasklist",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1584",
+			"tactic": "resource-development",
+			"color": "#fdae6b",
+			"comment": "ASSESSED",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1586",
+			"tactic": "resource-development",
+			"color": "#fdae6b",
+			"comment": "ASSESSED",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1041",
+			"tactic": "exfiltration",
+			"color": "#e60d0d",
+			"comment": "ASSESSED",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1210",
+			"tactic": "lateral-movement",
+			"color": "#fdae6b",
+			"comment": "ASSESSED:\n TA likely used Cobalt Strike to pivot and maintain persistence in the target network. ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1565",
+			"tactic": "impact",
+			"color": "#fdae6b",
+			"comment": "ASSESSED:\nfocus on ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027",
+			"tactic": "defense-evasion",
+			"color": "#e60d0d",
+			"comment": "An obfuscated JavaScript loader was found in the %TEMP% ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1505",
+			"tactic": "persistence",
+			"color": "#e60d0d",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1505.003",
+			"tactic": "persistence",
+			"color": "#e60d0d",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#ff6666ff",
+			"#ffe766ff",
+			"#8ec843ff"
+		],
+		"minValue": 0,
+		"maxValue": 100
+	},
+	"legendItems": [],
+	"metadata": [],
+	"links": [
+		{
+			"label": "Recorded Future ",
+			"url": "https://www.recordedfuture.com/blog/trimble-cityworks-cve-2025-0994-vulnerability-analysis"
+		}
+	],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false,
+	"selectVisibleTechniques": false
+}
